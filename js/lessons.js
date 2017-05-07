@@ -34,5 +34,5 @@ $("#prev").on("click", function(){
 });
 
 $("#run").on("click", function(){
-    eval( editor.getValue() + editor2.getValue() );
+    eval( editor2.getValue() + editor3.getValue() );
 });
