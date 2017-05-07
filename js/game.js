@@ -53,6 +53,7 @@ $("#lessons").draggable({
         
         editor.resize();
         editor2.resize();
+        editor3.resize();
     },
     stop: function() {
         if( $("#editorWrap").attr("class").indexOf("docked") < 0 ) {
@@ -68,6 +69,7 @@ $("#lessons").draggable({
                $("#game_wrap").css("width", "calc(100% - 400px)");
                editor.resize();
                editor2.resize();
+               editor3.resize();
            }
         }
     }
@@ -88,6 +90,7 @@ $("#editorWrap").draggable({
         $("#game_wrap").css("width", "calc(100%)");
         editor.resize();
         editor2.resize();
+        editor3.resize();
     },
     stop: function() {
         if( $("#lessons").attr("class").indexOf("docked") < 0 ) {
@@ -102,6 +105,7 @@ $("#editorWrap").draggable({
                $("#game_wrap").css("width", "calc(100% - 400px)");
                editor.resize();
                editor2.resize();
+               editor3.resize();
            }
         }
     }
@@ -126,19 +130,37 @@ $("#editor_open").click(function() {
 $("#tab1").click(function() {
     $(this).addClass("activeTab");
     $("#tab2").removeClass("activeTab");
+    $("#tab3").removeClass("activeTab");
     $("#editor1").show();
     $("#editor2").hide();
+    $("#editor3").hide();
     editor.resize();
     editor2.resize();
+    editor3.resize();
 })
 
 $("#tab2").click(function() {
     $(this).addClass("activeTab");
     $("#tab1").removeClass("activeTab");
+    $("#tab3").removeClass("activeTab");
     $("#editor2").show();
     $("#editor1").hide();
+    $("#editor3").hide();
     editor.resize();
     editor2.resize();
+    editor3.resize();
+})
+
+$("#tab3").click(function() {
+    $(this).addClass("activeTab");
+    $("#tab1").removeClass("activeTab");
+    $("#tab2").removeClass("activeTab");
+    $("#editor3").show();
+    $("#editor1").hide();
+    $("#editor2").hide();
+    editor.resize();
+    editor2.resize();
+    editor3.resize();
 })
 
 // Creates out of view HTML canvas with collision map to detect collision with buildings
@@ -476,11 +498,13 @@ function update() {
     $("#editor_resize").mousedown(function() {
         editor.resize();
         editor2.resize();
+        editor3.resize();
     })
     
     $("#editor_resize").mouseup(function() {
         editor.resize();
         editor2.resize();
+        editor3.resize();
     })
     
     var speechHeight = $("#speech_wrap").outerHeight();
