@@ -1,0 +1,21 @@
+purchaseBluebook
+textFriend
+callFriend
+purchaseAlpine
+eatAlpine
+move
+moveWithCB
+moveRight(x)
+moveRight
+moveLeft(x)
+moveLeft
+moveUp(x)
+moveUp
+moveDown(x)
+moveDown
+alert
+moveRightAndDo(x, callback)
+moveLeftAndDo(x, callback)
+moveUpAndDo(x,callback)
+moveUpAndDo(x, callback)
+moveDownAndDo(x, callback)
