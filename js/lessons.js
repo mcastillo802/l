@@ -61,7 +61,7 @@ setInterval(function() {
     
     lesson.css({"font-size": fontSize1 + '%'});
     editor.css({"font-size": fontSize2 + '%'});
-    preLesson.css({"font-size": fontSize1 + '%'});
-    codeLesson.css({"font-size": fontSize1 + '%'});
+    preLesson[0].css({"font-size": fontSize1 + '%'});
+    codeLesson[0].css({"font-size": fontSize1 + '%'});
     
 }, 15);
