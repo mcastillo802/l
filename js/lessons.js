@@ -44,6 +44,10 @@ var codeLesson = document.getElementById("consoleText").getElementsByTagName('co
 var headerLesson = document.getElementById("consoleText").getElementsByTagName('h1');
 var tabEditor = document.getElementById("editorWrap").getElementsByClassName("collapsible shadow ui-draggable docked");
 
+  for (i = 0; i < tabEditor.length; i++) {
+        tabEditor[i].style.width = "480px";
+}
+
 setInterval(function() { 
     var scaleSource1 = lesson.width(),
         scaleSource2 = editor.width(),
@@ -72,10 +76,6 @@ setInterval(function() {
 }
        for (i = 0; i < headerLesson.length; i++) {
     headerLesson[i].style.fontSize = fontSize1 + '%';
-}
-    for (i = 0; i < tabEditor.length; i++) {
-        tabEditor[i].style.width = "480px";
-        tabEditor[i].style.left = "calc(100%-480px)";
 }
     
 }, 15);
