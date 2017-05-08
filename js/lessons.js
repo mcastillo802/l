@@ -39,10 +39,9 @@ $("#run").on("click", function(){
 
 var lesson = $("#consoleText") // cached for performance
 var editor = $("#editorWrap")// ditto ^^
-var pLesson = document.getElementById("consoleText");
-var preLesson = pLesson.getElementsByTagName('pre');
-var codeLesson = pLesson.getElementsByTagName('code');
-
+var preLesson = document.getElementById("consoleText").getElementsByTagName('pre');
+var codeLesson = document.getElementById("consoleText").getElementsByTagName('code');
+var headerLesson = document.getElementById("consoleText").getElementsByTagName('h1');
 
 setInterval(function() { 
     var scaleSource1 = lesson.width(),
@@ -69,6 +68,9 @@ setInterval(function() {
 }
         for (i = 0; i < codeLesson.length; i++) {
     codeLesson[i].style.fontSize = fontSize1 + '%';
+}
+       for (i = 0; i < headerLesson.length; i++) {
+    headerLesson[i].style.fontSize = fontSize1 + '%';
 }
     
 }, 15);
