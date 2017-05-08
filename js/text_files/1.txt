@@ -11,6 +11,7 @@ For your first program, you are going to make the browser display an alert messa
 alert("Hello World");
 </pre>
 <br>
+<br>
 The <code>alert()</code> method will display whatever you put between the parenthesis.  After doing this you will have written your first bit of code as a programmer.
 <br>
 <br>
