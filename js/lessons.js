@@ -37,7 +37,7 @@ $("#run").on("click", function(){
     eval( editor2.getValue() + editor3.getValue() );
 });
 
-var lesson = $("#consoleText") // cached for performance
+var lesson = $("#consoleText".pre) // cached for performance
 var editor = $("#editorWrap")// ditto ^^
 
 
