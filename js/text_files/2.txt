@@ -13,6 +13,7 @@ There are five different types of primitive data types in JavaScript. They are n
 5. undefined
 </pre>
 <br>
+<br>
 To create a variable do the following:
 <br>
 <br>
