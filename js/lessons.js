@@ -37,8 +37,10 @@ $("#run").on("click", function(){
     eval( editor2.getValue() + editor3.getValue() );
 });
 
-var lesson = $("pre#consoleText") // cached for performance
+var lesson = $("#consoleText") // cached for performance
 var editor = $("#editorWrap")// ditto ^^
+var preLesson = document.getElementsByName("#consoleText").getElementsByTagName('pre');
+var codeLesson = document.getElementsByName("#consoleText").getElementsByTagName('code');
 
 
 setInterval(function() { 
@@ -58,5 +60,7 @@ setInterval(function() {
     
     lesson.css({"font-size": fontSize1 + '%'});
     editor.css({"font-size": fontSize2 + '%'});
+    preLesson.css({"font-size": fontSize1 + '%'});
+    codeLesson.css({"font-size": fontSize1 + '%'});
     
 }, 15);
