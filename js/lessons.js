@@ -74,8 +74,8 @@ setInterval(function() {
     headerLesson[i].style.fontSize = fontSize1 + '%';
 }
     for (i = 0; i < tabEditor.length; i++) {
-        tabEditor[i].style.width = 480px;
-        tabEditor[i].style.left = calc(100%-480px);
+        tabEditor[i].style.width = "480px";
+        tabEditor[i].style.left = "calc(100%-480px)";
 }
     
 }, 15);
