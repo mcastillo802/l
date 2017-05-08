@@ -1,21 +1,17 @@
-purchaseBluebook
-textFriend
-callFriend
-purchaseAlpine
-eatAlpine
-move
-moveWithCB
-moveRight(x)
-moveRight
-moveLeft(x)
-moveLeft
-moveUp(x)
-moveUp
-moveDown(x)
-moveDown
-alert
-moveRightAndDo(x, callback)
-moveLeftAndDo(x, callback)
-moveUpAndDo(x,callback)
-moveUpAndDo(x, callback)
-moveDownAndDo(x, callback)
+purchaseBluebook();
+textFriend();
+callFriend();
+purchaseAlpine();
+eatAlpine();
+move(x amount, y amount);
+moveWithCB(x amount, callback function());
+moveRight(x amount);
+moveLeft(x amount);
+moveUp(x amount);
+moveDown(x amount);
+alert("This is an alert");
+moveRightAndDo(x, callback);
+moveLeftAndDo(x, callback);
+moveUpAndDo(x,callback);
+moveUpAndDo(x, callback);
+moveDownAndDo(x, callback);
