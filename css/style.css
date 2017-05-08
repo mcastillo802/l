@@ -603,6 +603,7 @@ body {
     border-radius: px;
     padding: 10px;
     border-left: 4px solid;
+    display: inline-block;
 }
 
 
