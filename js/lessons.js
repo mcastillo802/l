@@ -39,8 +39,9 @@ $("#run").on("click", function(){
 
 var lesson = $("#consoleText") // cached for performance
 var editor = $("#editorWrap")// ditto ^^
-var preLesson = document.getElementsByName("#consoleText").getElementsByTagName('pre');
-var codeLesson = document.getElementsByName("#consoleText").getElementsByTagName('code');
+var pLesson = document.getElementsByName("#consoleText");
+var preLesson = pLesson.getElementsByTagName('pre');
+var codeLesson = pLesson.getElementsByTagName('code');
 
 
 setInterval(function() { 
