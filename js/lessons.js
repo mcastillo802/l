@@ -42,8 +42,8 @@ var editor = $("#editorWrap")// ditto ^^
 var preLesson = document.getElementById("consoleText").getElementsByTagName('pre');
 var codeLesson = document.getElementById("consoleText").getElementsByTagName('code');
 var headerLesson = document.getElementById("consoleText").getElementsByTagName('h1');
-editor.css({"width": 480px});
-editor.css({"left": calc(100% -480px)});
+editor.css({"width": "480"});
+editor.css({'left:', '100%'}).css({'left:', '-=100px'});
 
 setInterval(function() { 
     var scaleSource1 = lesson.width(),
