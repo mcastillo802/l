@@ -600,10 +600,10 @@ body {
     font-family: Monaco, monospace;
     color: #7bafd4;
     font-size: 12px;
-    font-size:1vw;
     border-radius: px;
     padding: 10px;
     border-left: 4px solid;
+    display: inline-block;
 }
 
 
