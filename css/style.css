@@ -707,7 +707,7 @@ body {
 }
 
 .tab {
-    width: 150px;
+    width: 135px;
     height: 25px;
     background: #222222;
     display: inline-block;
@@ -771,7 +771,9 @@ body {
 }
 
 #editorWrap.docked {
+    width: 480px;
     top: 0;
+    left: calc(100% - 480px);
     border-radius: 0;
 }
 
