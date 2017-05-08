@@ -42,11 +42,6 @@ var editor = $("#editorWrap")// ditto ^^
 var preLesson = document.getElementById("consoleText").getElementsByTagName('pre');
 var codeLesson = document.getElementById("consoleText").getElementsByTagName('code');
 var headerLesson = document.getElementById("consoleText").getElementsByTagName('h1');
-var tabEditor = document.getElementById("editorWrap").getElementsByClassName("docked");
-
-  for (i = 0; i < tabEditor.length; i++) {
-        tabEditor[i].style.width = "480px";
-}
 
 setInterval(function() { 
     var scaleSource1 = lesson.width(),
