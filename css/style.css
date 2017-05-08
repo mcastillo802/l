@@ -595,7 +595,7 @@ body {
     padding: 2px 5px;
 }
 
-#consoleText pre {
+pre#consoleText {
     background: #2d2d2d;
     font-family: Monaco, monospace;
     color: #7bafd4;
