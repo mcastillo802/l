@@ -36,3 +36,27 @@ $("#prev").on("click", function(){
 $("#run").on("click", function(){
     eval( editor2.getValue() + editor3.getValue() );
 });
+
+var lesson = $("#consoleText.pre") // cached for performance
+var editor = $("#editorWrap")// ditto ^^
+
+
+setInterval(function() { 
+    var scaleSource1 = lesson.width(),
+        scaleSource2 = editor.width(),
+        scaleFactor = 0.35,                     
+        maxScale = 600,
+        minScale = 30; //Tweak these values to taste
+
+    var fontSize1 = scaleSource1 * scaleFactor; //Multiply the width of the body by the scaling factor:
+    var fontSize2 = scaleSource2 * scaleFactor; //Multiply the width of the body by the scaling factor:
+
+    if (fontSize1 > maxScale) fontSize1 = maxScale;
+    if (fontSize1 < minScale) fontSize1 = minScale; //Enforce the minimum and maximums
+    if (fontSize2 > maxScale) fontSize2 = maxScale;
+    if (fontSize2 < minScale) fontSize2 = minScale; //Enforce the minimum and maximums 
+    
+    lesson.css({"font-size": fontSize1 + '%'});
+    editor.css({"font-size": fontSize2 + '%'});
+    
+}, 15);
