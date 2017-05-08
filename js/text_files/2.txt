@@ -21,6 +21,7 @@ To create a variable do the following:
 var myVariable = 40;
 </pre>
 <br>
+<br>
 In the previous example, we assigned the value <code>40</code> which is a number to <code>myVariable</code>. Which means anytime <code>myVariable</code> is used it is equivalent to <code>40</code>.
 <br><br>
 Use <code>alert()</code> to display <code>myVariable</code> and see what happens. If you do not remember how to use <code>alert()</code> feel free to look back at lesson one.
@@ -35,4 +36,5 @@ var aNull = null;
 var undefinedValue;
 </pre>
 <br> 
+<br>
 JavaScript does not require you to use the name of primitive data types when you are assigning them to variables, but this is not true for other programming languages. It's good to know about these primitive data types because they are pretty much the same in JS as in other programming languages.
